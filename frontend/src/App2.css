@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  font-family: inherit;
+}
+
+.dashboard {
+  min-height: 100vh;
+  background: #f4f7fa;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.navigation-buttons button {
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  background: #f8fafc;
+  cursor: pointer;
+}
+
+.navigation-buttons button:hover {
+  background: #e3f2fd;
+}
+
+.page-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.profile-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.page-container button {
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .navigation-buttons {
+    flex-direction: column;
+  }
+
+  .navigation-buttons button {
+    width: 100%;
+  }
+
+  .page-container {
+    width: 95%;
+  }
+}
